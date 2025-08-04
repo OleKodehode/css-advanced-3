@@ -24,7 +24,6 @@ header {
   background-color: hsla(212, 100%, 30%, 0.8);
   position: sticky;
   top: 0;
-  left: 0;
 }
 
 #empty-box {
@@ -61,6 +60,14 @@ a:visited {
 a {
   font-size: 1.5rem;
   color: hsl(0, 0%, 90%);
+  transition: color 0.5s;
+  transition: text-shadow 0.5s;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
 }
 
 #landing-img {
@@ -94,6 +101,17 @@ a {
 
 .krsund-text {
   animation: slideFromRight 1.5s ease-in;
+}
+
+.article-header {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.article-text {
+  margin: 0 auto;
+  width: 80%;
 }
 
 @keyframes slideFromLeft {
