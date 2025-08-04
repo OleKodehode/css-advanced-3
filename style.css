@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100svw;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header {
+  height: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  background-color: hsla(212, 100%, 30%, 0.8);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#empty-box {
+  width: 15%;
+}
+
+h1 {
+  color: hsl(0, 0%, 90%);
+  font-style: italic;
+  text-shadow: 2px 2px 4px black;
+  letter-spacing: 1.5px;
+}
+
+nav > ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+
+.current-page {
+  text-decoration: underline;
+  color: hsl(0, 0%, 20%);
+  font-style: italic;
+  pointer-events: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 90%);
+}
+
+#landing-img {
+  background-image: url(./assets/aerial_photo_kristiansund.jpg);
+  width: 100%;
+  height: auto;
+  min-height: 80svh;
+  padding-top: 10svh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#landing-img > p {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  align-items: center;
+  font-size: 3.25rem;
+  font-style: italic;
+  font-weight: bold;
+  color: hsla(212, 100%, 30%);
+  text-shadow: 4px 4px 6px hsl(0, 0%, 60%);
+}
+
+.welcome-text {
+  animation: slideFromLeft 1.5s ease-in;
+}
+
+.krsund-text {
+  animation: slideFromRight 1.5s ease-in;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50svw);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(-25svw) skew(-10deg) scale(1.05);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skew(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50svw);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(25svw) skew(-10deg) scale(1.05);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skew(0) scale(1);
+    filter: blur(0);
+  }
+}

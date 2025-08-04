@@ -4,19 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS animations, Transitions & Transform</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <div id="empty-box"></div>
       <!-- spacing box-->
       <h1>Kristiansund</h1>
-      <nav><a href="./index.html"></a><a href=""></a><a href=""></a></nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html" class="current-page">Home</a>
+          </li>
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section>
-      <div id="landing-img"></div>
-      <article></article>
-      <article></article>
+      <div id="landing-img">
+        <p class="welcome-text">Welcome to</p>
+        <p class="krsund-text">Kristiansund</p>
+      </div>
+      <article id="gallery-article"></article>
+      <article id="about-article"></article>
     </section>
     <footer>
       <p class="footer-copyright"></p>
