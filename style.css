@@ -139,6 +139,10 @@ footer {
   color: hsl(0, 0%, 90%);
 }
 
+.hidden {
+  opacity: 0;
+}
+
 @keyframes slideFromLeft {
   0% {
     opacity: 0;
@@ -170,5 +174,11 @@ footer {
     opacity: 1;
     transform: translateX(0) skew(0) scale(1);
     filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
   }
 }
