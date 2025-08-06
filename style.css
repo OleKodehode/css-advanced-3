@@ -19,7 +19,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 1em;
   align-items: center;
   background-color: hsla(212, 100%, 30%, 0.8);
   position: sticky;
@@ -41,7 +41,7 @@ nav > ul {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  gap: 1.5rem;
+  gap: 1.5em;
   padding-right: 1rem;
 }
 
@@ -58,7 +58,7 @@ a:visited {
 }
 
 a {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: hsl(0, 0%, 90%);
   transition: color 0.5s;
   transition: text-shadow 0.5s;
@@ -104,16 +104,39 @@ a:hover {
 }
 
 .article-header {
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
   margin: 1rem;
 }
 
 .article-text {
   margin: 0 auto;
-  width: 70%;
-  font-size: 1.25rem;
+  margin-bottom: 1em;
+  width: 60%;
+  font-size: 1.25em;
   line-height: 1.5;
+}
+
+.info {
+  font-size: 0.75em;
+  font-style: italic;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 70%;
+}
+
+footer {
+  margin-top: 10svh;
+  min-height: 20svh;
+  background-color: hsla(212, 100%, 30%, 0.8);
+}
+
+.footer-info {
+  font-size: 0.75em;
+  font-style: italic;
+  margin: 2em auto;
+  width: 50%;
+  color: hsl(0, 0%, 90%);
 }
 
 @keyframes slideFromLeft {
